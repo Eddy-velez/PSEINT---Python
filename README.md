@@ -58,3 +58,72 @@ Operaciones básicas en PSEINT y Python
         #rint("La resta es mayor o igual que la división.")
 
 #operaciones_y_comparaciones()
+
+Proceso Calcular_100_Años
+		Definir nombre Como Caracter
+		Definir edad, año_actual, año_100 Como Entero
+		
+		Escribir "Introduce tu nombre:"
+		Leer nombre
+		
+		Escribir "Introduce tu edad:"
+		Leer edad
+		
+		año_actual = 2024
+		año_100 = año_actual + (100 - edad)
+		
+		Escribir "Hola ", nombre, ". Cumplirás 100 años en el año ", año_100, "."
+FinProceso
+
+Definir numero_entero Como Entero
+    Definir numero_flotante Como Real
+    Definir texto Como Caracter
+	
+    numero_entero = 10
+    numero_flotante = 5.75
+    texto = "Resultado"
+	
+    suma = numero_entero + numero_flotante
+    resta = numero_entero - numero_flotante
+    multiplicacion = numero_entero * PI
+    division = numero_entero / numero_flotante
+	
+    Escribir "Suma = ", suma
+    Escribir "Resta = ", resta
+    Escribir "Multiplicación con PI = ", multiplicacion
+    Escribir "División = ", division
+FinProceso
+
+Proceso Operaciones_Y_Comparaciones
+    Definir numero1, numero2 Como Real
+    Definir suma, resta, multiplicacion, division Como Real
+	
+    Escribir "Introduce el primer número:"
+    Leer numero1
+	
+    Escribir "Introduce el segundo número:"
+    Leer numero2
+	
+    suma = numero1 + numero2
+    resta = numero1 - numero2
+    multiplicacion = numero1 * numero2
+    division = numero1 / numero2
+	
+    Escribir "Resultados:"
+    Escribir "Suma: ", suma
+    Escribir "Resta: ", resta
+    Escribir "Multiplicación: ", multiplicacion
+    Escribir "División: ", division
+	
+    Si suma > multiplicacion Entonces
+        Escribir "La suma es mayor que la multiplicación."
+    SiNo
+        Escribir "La multiplicación es mayor o igual que la suma."
+    FinSi
+	
+    Si resta < division Entonces
+        Escribir "La resta es menor que la división."
+    SiNo
+        Escribir "La resta es mayor o igual que la división."
+    FinSi
+FinProceso
