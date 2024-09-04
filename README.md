@@ -1,129 +1,139 @@
-# PSEINT---Python
-Operaciones básicas en PSEINT y Python
-#def calcular_100_años():
-    #nombre = input("Introduce tu nombre: ")
-    #edad = int(input("Introduce tu edad: "))
+Parte 1: Estructura Principal de un Programa
+PSEINT:
 
-    #año_actual = 2024
-    #año_100 = año_actual + (100 - edad)
+pseint
+Copiar código
+Algoritmo CalculoAnios100
+    Escribir "Introduzca su nombre:"
+    Leer nombre
+    Escribir "¿Cuántos años tiene actualmente?"
+    Leer edad
 
-    #print(f"Hola {nombre}. Cumplirás 100 años en el año {año_100}.")
+    anio_actual <- 2024
+    anio_100 <- anio_actual + (100 - edad)
 
-#calcular_100_años()
+    Escribir "Hola ", nombre, ". El año en que cumplirás 100 años será ", anio_100
+FinAlgoritmo
+
+Python:
+
+python
+Copiar código
+# Programa para determinar el año en que cumplirás 100 años
+nombre = input("Introduzca su nombre: ")
+edad = int(input("¿Cuántos años tiene actualmente? "))
+
+anio_actual = 2024
+anio_100 = anio_actual + (100 - edad)
+
+print(f"Hola {nombre}. El año en que cumplirás 100 años será {anio_100}")
 
 
-#def calculos_basicos():
-    #numero_entero = 10
-    #numero_flotante = 5.75
-    #texto = "Resultado"
+Parte 2: Tipos de Datos, Constantes y Variables
+PSEINT:
 
-    #PI = 3.1416  # Constante
+pseint
+Copiar código
+Algoritmo EjemploVariables
+    Const porcentaje_iva = 0.21
+    Definir precio_base Como Real
+    Definir precio_final Como Real
+    Definir descripcion Como Cadena
 
-    #suma = numero_entero + numero_flotante
-    #resta = numero_entero - numero_flotante
-    #multiplicacion = numero_entero * PI
-    #division = numero_entero / numero_flotante
+    precio_base <- 150.75
+    descripcion <- "Precio con IVA"
 
-    
-    #print(f"Suma = {suma}")
-    #print(f"Resta = {resta}")
-    #print(f"Multiplicación con PI = {multiplicacion}")
-    #print(f"División = {division}")
+    precio_final <- precio_base * (1 + porcentaje_iva)
 
-#calculos_basicos()
+    Escribir descripcion
+    Escribir "El precio base es: ", precio_base
+    Escribir "El precio final con IVA es: ", precio_final
+FinAlgoritmo
 
-#def operaciones_y_comparaciones():
-    #numero1 = float(input("Introduce el primer número: "))
-    #numero2 = float(input("Introduce el segundo número: "))
 
-    #suma = numero1 + numero2
-    #resta = numero1 - numero2
-    #multiplicacion = numero1 * numero2
-    #division = numero1 / numero2
+Python:
 
-    #print("Resultados:")
-    #print(f"Suma: {suma}")
-    #print(f"Resta: {resta}")
-    #print(f"Multiplicación: {multiplicacion}")
-    #print(f"División: {division}")
+python
+Copiar código
+# Declaración de tipos de datos y constantes
+PORCENTAJE_IVA = 0.21
+precio_base = 150.75
+descripcion = "Precio con IVA"
 
-    #if suma > multiplicacion:
-        #print("La suma es mayor que la multiplicación.")
-    #else:
-        #print("La multiplicación es mayor o igual que la suma.")
+# Cálculo del precio final
+precio_final = precio_base * (1 + PORCENTAJE_IVA)
 
-    #if resta < division:
-        #print("La resta es menor que la división.")
-    #else:
-        #rint("La resta es mayor o igual que la división.")
+print(descripcion)
+print(f"El precio base es: {precio_base}")
+print(f"El precio final con IVA es: {precio_final}")
+Parte 3: Operaciones Básicas y Expresiones
+PSEINT:
 
-#operaciones_y_comparaciones()
 
-Proceso Calcular_100_Años
-		Definir nombre Como Caracter
-		Definir edad, año_actual, año_100 Como Entero
-		
-		Escribir "Introduce tu nombre:"
-		Leer nombre
-		
-		Escribir "Introduce tu edad:"
-		Leer edad
-		
-		año_actual = 2024
-		año_100 = año_actual + (100 - edad)
-		
-		Escribir "Hola ", nombre, ". Cumplirás 100 años en el año ", año_100, "."
-FinProceso
 
-Definir numero_entero Como Entero
-    Definir numero_flotante Como Real
-    Definir texto Como Caracter
-	
-    numero_entero = 10
-    numero_flotante = 5.75
-    texto = "Resultado"
-	
-    suma = numero_entero + numero_flotante
-    resta = numero_entero - numero_flotante
-    multiplicacion = numero_entero * PI
-    division = numero_entero / numero_flotante
-	
-    Escribir "Suma = ", suma
-    Escribir "Resta = ", resta
-    Escribir "Multiplicación con PI = ", multiplicacion
-    Escribir "División = ", division
-FinProceso
-
-Proceso Operaciones_Y_Comparaciones
+Algoritmo OperacionesYComparaciones
     Definir numero1, numero2 Como Real
-    Definir suma, resta, multiplicacion, division Como Real
-	
-    Escribir "Introduce el primer número:"
+    Definir suma, diferencia, producto, cociente Como Real
+
+    Escribir "Ingrese el primer número:"
     Leer numero1
-	
-    Escribir "Introduce el segundo número:"
+    Escribir "Ingrese el segundo número:"
     Leer numero2
-	
-    suma = numero1 + numero2
-    resta = numero1 - numero2
-    multiplicacion = numero1 * numero2
-    division = numero1 / numero2
-	
-    Escribir "Resultados:"
+
+    suma <- numero1 + numero2
+    diferencia <- numero1 - numero2
+    producto <- numero1 * numero2
+
+    Si numero2 <> 0 Entonces
+        cociente <- numero1 / numero2
+    Sino
+        Escribir "Error: División por cero"
+        cociente <- 0
+    FinSi
+
     Escribir "Suma: ", suma
-    Escribir "Resta: ", resta
-    Escribir "Multiplicación: ", multiplicacion
-    Escribir "División: ", division
-	
-    Si suma > multiplicacion Entonces
-        Escribir "La suma es mayor que la multiplicación."
-    SiNo
-        Escribir "La multiplicación es mayor o igual que la suma."
+    Escribir "Diferencia: ", diferencia
+    Escribir "Producto: ", producto
+    Escribir "Cociente: ", cociente
+
+    Si suma < producto Entonces
+        Escribir "La suma es menor que el producto"
+    Sino
+        Escribir "La suma no es menor que el producto"
     FinSi
-	
-    Si resta < division Entonces
-        Escribir "La resta es menor que la división."
-    SiNo
-        Escribir "La resta es mayor o igual que la división."
-    FinSi
-FinProceso
+FinAlgoritmo
+
+
+Python:
+
+python
+Copiar código
+# Solicitar dos números al usuario
+numero1 = float(input("Ingrese el primer número: "))
+numero2 = float(input("Ingrese el segundo número: "))
+
+# Realizar operaciones aritméticas
+suma = numero1 + numero2
+diferencia = numero1 - numero2
+producto = numero1 * numero2
+
+# Manejo de división por cero
+if numero2 != 0:
+    cociente = numero1 / numero2
+else:
+    print("Error: División por cero")
+    cociente = None
+
+# Mostrar resultados
+print(f"Suma: {suma}")
+print(f"Diferencia: {diferencia}")
+print(f"Producto: {producto}")
+if cociente is not None:
+    print(f"Cociente: {cociente}")
+
+# Comparación lógica
+if suma < producto:
+    print("La suma es menor que el producto")
+else:
+    print("La suma no es menor que el producto")
+        
