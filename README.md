@@ -2,7 +2,7 @@ Parte 1: Estructura Principal de un Programa
 PSEINT:
 
 pseint
-Copiar código
+
 Algoritmo CalculoAnios100
     Escribir "Introduzca su nombre:"
     Leer nombre
@@ -33,7 +33,7 @@ Parte 2: Tipos de Datos, Constantes y Variables
 PSEINT:
 
 pseint
-Copiar código
+
 Algoritmo EjemploVariables
     Const porcentaje_iva = 0.21
     Definir precio_base Como Real
@@ -54,7 +54,6 @@ FinAlgoritmo
 Python:
 
 python
-Copiar código
 # Declaración de tipos de datos y constantes
 PORCENTAJE_IVA = 0.21
 precio_base = 150.75
@@ -66,10 +65,10 @@ precio_final = precio_base * (1 + PORCENTAJE_IVA)
 print(descripcion)
 print(f"El precio base es: {precio_base}")
 print(f"El precio final con IVA es: {precio_final}")
+
+
 Parte 3: Operaciones Básicas y Expresiones
 PSEINT:
-
-
 
 Algoritmo OperacionesYComparaciones
     Definir numero1, numero2 Como Real
@@ -107,7 +106,6 @@ FinAlgoritmo
 Python:
 
 python
-Copiar código
 # Solicitar dos números al usuario
 numero1 = float(input("Ingrese el primer número: "))
 numero2 = float(input("Ingrese el segundo número: "))
