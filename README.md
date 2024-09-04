@@ -18,7 +18,7 @@ FinAlgoritmo
 Python:
 
 python
-Copiar código
+
 # Programa para determinar el año en que cumplirás 100 años
 nombre = input("Introduzca su nombre: ")
 edad = int(input("¿Cuántos años tiene actualmente? "))
